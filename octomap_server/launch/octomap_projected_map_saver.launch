@@ -1,5 +1,5 @@
 <launch>
     <remap from="map" to="projected_map" />
-    <node pkg="map_server" type="map_saver" name="map_saver1" args=" -f /home/sjchoi/map/octomap"
+    <node pkg="map_server" type="map_saver" name="map_saver1" args=" -f $(env HOME)/map/octomap"
         output="screen" />
 </launch>
